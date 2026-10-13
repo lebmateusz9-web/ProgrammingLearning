@@ -1,48 +1,32 @@
 <!doctype html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>moja - strona internetowa</title>
-        <link rel="stylesheet" href="style.css">
-        <head>
-            <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licznik kliknięć</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-            <header class="navbar">
-                <div class="logo">MOJA STRONA</div>
-            
-                <nav class="menu">
-                    <a href="#start">strona glówna</a>
-                    <a href="#omnie">o mnie</a>
-                    <a href="#kontakt">kontakt</a>
-        
-                </nav>
-                </header>
+    <main class="card">
+        <span class="tag">Mój pierwszy projekt w JS</span>
 
-                <main class="hero">
-                    <span class="tag">Witaj w moim projekcie</span>
-                
-                    <h1> tworzę swoją pierwszą stronę internetową</h1>
+        <h1 class="title">Licznik kliknięć</h1>
 
-                    <p class="description">
-                        poznaj mój projekt. Uczę się programowania i buduję nowoczesne strony internetowe od podstaw.
-                        </p>
+        <div id="licznik" class="counter">0</div>
 
-                        <div class="button">
-                            <button class="btn-primary" onclick="pokazWiadomosc()">
-                               moje informacje
-                            </button>
+        <div class="buttons">
+            <button id="minus" class="btn btn-minus" aria-label="Zmniejsz">−</button>
+            <button id="reset" class="btn btn-reset">Reset</button>
+            <button id="plus" class="btn btn-plus" aria-label="Zwiększ">+</button>
+        </div>
 
-                            <button class="btn-secondary" onclick="pokazInformacje()">
-                                wiecej informacji
-                            </button>
-                        </div>
+        <p class="hint">Kliknij przycisk, aby zmienić liczbę</p>
+    </main>
 
-                        <p id="wynik"></p>
-                        </main>
-
-                        <script src="script.js"></script>
-                        </body>
-                       </html>
-                            
-                        
+    <script src="script.js"></script>
+</body>
+</html>
