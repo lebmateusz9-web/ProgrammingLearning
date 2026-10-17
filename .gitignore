@@ -1,0 +1,8 @@
+# Pliki systemowe macOS
+.DS_Store
+
+# Zależności npm (gdyby kiedyś się pojawiły)
+node_modules/
+
+# Lokalne ustawienia Claude (prywatne, nie do repo)
+.claude/settings.local.json
